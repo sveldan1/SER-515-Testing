@@ -15,7 +15,10 @@ public class urinals {
         }
         return true;
     }
-
+    int countUrinals(String s){
+        System.out.println("Not yet implemented");
+        return 0;
+    }
     public static void main(String[] args) throws IOException {
 
 
