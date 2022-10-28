@@ -27,7 +27,7 @@ public class urinals {
                     if(l && r){
                         count++;
 
-                      st[i]='0';
+                      st[i]='1';
 
                     }
                 }
