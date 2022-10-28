@@ -42,6 +42,17 @@ public class urinals {
         }
         return  true;
     }
+    static File readFile() throws IOException{
+        File f = new File("src/urinals.dat");
+
+        FileReader fr =new FileReader(f);
+        if(fr==null){
+            System.out.println("urinals.dat file is empty");
+        }
+        else{
+        return f;}
+        return f;
+    }
    static int countUrinals(String s){
         if(isStringValid(s)){
             char []  st=s.toCharArray();
@@ -84,11 +95,10 @@ public class urinals {
         System.out.println(n);
     } else if (a==1) {
             StringBuilder ot=new StringBuilder();
-            File f = new File("src/urinals.dat");
+            File f = readFile();
+
             FileReader fr =new FileReader(f);
-            if(fr==null){
-                System.out.println("urinals.dat file is empty");
-            }
+
             BufferedReader br = new BufferedReader(fr);
             String str;
             while ((str=br.readLine())!=null){

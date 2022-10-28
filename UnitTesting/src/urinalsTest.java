@@ -1,6 +1,10 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.io.*;
+import java.io.IOException;
+
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class urinalsTest {
@@ -37,6 +41,14 @@ class urinalsTest {
     void createFile() {
         System.out.println("======SOWMYA VELDANDI==TEST THREE EXECUTED====");
         Assertions.assertNotEquals(urinals.createFile(),null);
+    }
+
+
+    @Test
+    void writeintoFile() {
+        System.out.println("======SOWMYA VELDANDI==TEST FOUR EXECUTED====");
+        File f=new File("test.txt");
+        Assertions.assertEquals(urinals.writeintoFile("test rule.txt",f),true);
     }
 
 
