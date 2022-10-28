@@ -8,7 +8,9 @@ public class urinals {
             if(s.charAt(i)=='1' && s.charAt(i+1)=='1'){
                 return false;
             }
-
+            else if (!(s.charAt(i)=='1') && !(s.charAt(i)=='0')) {
+                return false;
+            }
 
         }
         return true;

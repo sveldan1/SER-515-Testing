@@ -8,5 +8,7 @@ class urinalsTest {
     void isStringValid() {
         System.out.println("======SOWMYA VELDANDI==TEST EXECUTED====");
         Assertions.assertEquals(urinals.isStringValid("Hi"), false);
+        Assertions.assertEquals(urinals.isStringValid("10001"),true);
+        Assertions.assertEquals(urinals.isStringValid("110"),false);
     }
 }
