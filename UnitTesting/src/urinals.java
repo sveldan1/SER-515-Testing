@@ -15,9 +15,28 @@ public class urinals {
         }
         return true;
     }
-    int countUrinals(String s){
-        System.out.println("Not yet implemented");
-        return 0;
+   static int countUrinals(String s){
+        if(isStringValid(s)){
+            char []  st=s.toCharArray();
+            int count=0;
+            for(int i=0;i<st.length;i++){
+                if(st[i]=='0'){
+                    boolean l =(i==0) || (st[i-1]=='0');
+                    boolean r=(i==st.length-1) || (st[i+1]=='0');
+
+                    if(l && r){
+                        count++;
+
+                      st[i]='0';
+
+                    }
+                }
+            }
+            return count;
+        }
+        else{
+            return -1;
+        }
     }
     public static void main(String[] args) throws IOException {
 
@@ -30,6 +49,7 @@ public class urinals {
         else{
             System.out.println("not valid");
         }
-
+       int  n= countUrinals(s);
+        System.out.println(n);
     }
 }
