@@ -15,6 +15,7 @@ class urinalsTest {
 
     @Test
     void countUrinals() {
+        System.out.println("======SOWMYA VELDANDI==TEST TWO EXECUTED====");
         System.out.println("==TEST 1==");
         Assertions.assertEquals(urinals.countUrinals("Hi"),-1);
         System.out.println("==TEST 2==");
@@ -31,4 +32,12 @@ class urinalsTest {
         Assertions.assertEquals(urinals.countUrinals("011"),-1);
 
     }
+
+    @Test
+    void createFile() {
+        System.out.println("======SOWMYA VELDANDI==TEST THREE EXECUTED====");
+        Assertions.assertNotEquals(urinals.createFile(),null);
+    }
+
+
 }
