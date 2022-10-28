@@ -46,7 +46,7 @@ class urinalsTest {
 
     @Test
     void writeintoFile() {
-        System.out.println("======SOWMYA VELDANDI==TEST FOUR EXECUTED====");
+        System.out.println("====SOWMYA VELDANDI==TEST FOUR EXECUTED====");
         File f=new File("test.txt");
         Assertions.assertEquals(urinals.writeintoFile("test rule.txt",f),true);
     }
